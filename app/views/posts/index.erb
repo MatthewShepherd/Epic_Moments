@@ -1,0 +1,15 @@
+<% if logged_in? %>
+  <form action="/sessions" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Logout">
+  </form>
+<% else %>
+  <a href="/users/new">Register</a>
+
+  <a href="/sessions/new">Login</a>
+<% end %>
+<h1>Epic Moments</h1>
+
+<h1>Top Posts</h1>
+
+
