@@ -1,7 +1,7 @@
 require 'bcrypt'
 
 class User < ActiveRecord::Base
-  has_many :posts, as: :postable
+  has_many :posts
 
    include BCrypt
 
