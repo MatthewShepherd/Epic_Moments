@@ -1,3 +1,4 @@
 class Post < ActiveRecord::Base
-  # Remember to create a migration!
+  belongs_to :postable, polymorphic: true
+  has_many :votes, as: :voteable
 end
